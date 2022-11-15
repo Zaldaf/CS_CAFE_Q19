@@ -54,6 +54,9 @@ switch ($case) {
     case "Gerer_monCompte":
         include "Controleur/Controleur_Gerer_monCompte.php";
         break;
+    case "RGPD":
+        include "Controleur/Controleur_RGPD_Utilisateur.php";
+        break ;
     default:
         include "Controleur/Controleur_visiteur_admin.php";
         break;

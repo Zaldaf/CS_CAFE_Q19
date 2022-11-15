@@ -151,7 +151,7 @@ WHERE idSalarie = :paramidUtilisateur');
         $requetePreparee = $connexionPDO->prepare('
         update salarie
         set aAccepteRGPD = 1,
-            dateAcceptionRGPD = :dateAct
+            dateAcceptationRGPD = :dateAct
         where idSalarie = :idSalarie');
         $requetePreparee->bindParam('idSalarie', $idSalarie);
         $dateAct = date("Y-m-d H:i:s");
