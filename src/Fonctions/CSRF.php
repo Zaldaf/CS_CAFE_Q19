@@ -8,9 +8,19 @@
 function genereCSRF(): string
 {
     if (!isset($_SESSION["CSRF"])) {
-        //On va générer une nouvelle valeur
-        $_SESSION["CSRF"] = random_int(0, 999999999);
+        $_SESSION["CSRF"]=[];
+
     }
+    $nb = count($_SESSION["CSRF"]);
+    //On va générer une nouvelle valeur
+    if (!isset($_SESSION["CSRF"][$nb-1]["ValCsrf"])){
+
+    }
+
+    if (!isset($_SESSION["CSRF"][$nb-1]["ValCsrf"])){
+        $_SESSION["CSRF"][$nb-1]["ValCsrf"]= random_int(0, 999999999);
+    }
+
     return $_SESSION["CSRF"];
 }
 
