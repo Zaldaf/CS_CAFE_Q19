@@ -15,4 +15,52 @@ function GenereMDP($nbChar) :string{
     }
     return $pass;
 }
+function CalculComplexiteMdp($mdp) :int{
+        $longueur= strlen($mdp);
+        $charMin = "abcdefghijklmnopqrstuvwxyz ";
+        $charMaj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $chiffre = "0123456789";
+
+        $isCharMin = false;
+        $isCharMaj = false;
+        $isChiffre = false;
+        $isCharSpe = false;
+
+        for ($i=0;$i <$longueur; $i++){
+
+
+
+            if (strpos($charMin,$mdp[$i]>0)){
+                $isCharMin=true;
+            }
+            elseif (strpos($charMaj,$mdp[$i]>0)){
+                $isCharMaj=true;
+            }
+            elseif (strpos($chiffre,$mdp[$i]>0)){
+              $isChiffre=true;
+            }
+            else {
+                $isCharSpe=true;
+
+            }
+
+        }
+        //Nb caractère
+        $nbPossible = 0;
+    if ($isCharMin){
+        $nbPossible +=26;
+    }
+    if ($isCharMaj){
+        $nbPossible +=26;
+    }
+    if ($isChiffre){
+        $nbPossible +=10;
+    }
+    if ($isCharSpe){
+        $nbPossible +=28;
+    }
+    //calcul bits
+    $complexe=log(pow($longueur,$nbPossible))/log(2);
+    return $complexe;
+    }
 
