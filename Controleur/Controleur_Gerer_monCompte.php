@@ -56,6 +56,15 @@ switch ($action) {
         $Vue->setEntete(new Vue_Structure_Entete());
         $Vue->addToCorps(new Vue_Connexion_Formulaire_administration());
         break;
+    case "réinitialiserMDPUtilisateur":
+        //Réinitialiser MDP sur la fiche de l'entreprise
+        $Utilisateur = Modele_Utilisateur::Utilisateur_Select_ParId($_REQUEST["idSalarie"]);
+        \App\Modele\Modele_Salarie::Salarie_Modifier_motDePasse($_REQUEST["idSalarie"], "secret"); //$Utilisateur["idUtilisateur"]
+
+        $listeUtilisateur = Modele_Utilisateur::Utilisateur_Select();
+        $Vue->addToCorps(new Vue_Utilisateur_Liste($listeUtilisateur));
+
+        break;
     default:
         //Cas par défaut: affichage du menu des actions.
         $Vue->setEntete(new Vue_Structure_Entete());

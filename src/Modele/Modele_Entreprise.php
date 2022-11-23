@@ -271,4 +271,15 @@ WHERE idEntreprise = :paramidEntreprise');
         $reponse = $requetePreparee->execute(); //$reponse boolean sur l'état de la requête
         return $reponse;
     }
+
+    static function passgen1($nbChar)
+    {
+        $chaine = "ABCDEFGHIJKLMONOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        $pass = '';
+        for ($i = 0; $i < $nbChar; $i++) {
+            $pass .= $chaine[random_int(0,strlen($chaine))];
+        }
+        return $pass;
+    }
+
 }

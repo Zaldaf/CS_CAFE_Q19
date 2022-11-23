@@ -1,5 +1,5 @@
 <?php
-include "/vendor/autoload.php";
+include "../vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer; //Obligatoire pour avoir l’objet phpmailer qui marche
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -23,4 +23,6 @@ if ($mail->addReplyTo('test@labruleriecomtoise.fr', 'admin')) {
     $msg = 'Il doit manquer qqc !';
 }
 echo $msg;
+
+
 ?>

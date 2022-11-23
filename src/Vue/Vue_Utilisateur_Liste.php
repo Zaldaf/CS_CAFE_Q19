@@ -61,7 +61,7 @@ class Vue_Utilisateur_Liste extends Vue_Composant
 
                 $str .=  "
                 <form style='display: contents'>
-                ".genereChampHiddenCSRF().""
+                ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_utilisateur'>
                         
                         <input type='hidden' value='$iemeUtilisateur[idUtilisateur]' name='idUtilisateur'>

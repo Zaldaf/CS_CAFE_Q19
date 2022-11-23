@@ -39,7 +39,7 @@ switch ($action) {
         //Réinitialiser MDP sur la fiche de l'entreprise
         $entreprise = Modele_Entreprise::Entreprise_Select_ParId($_REQUEST["idEntreprise"]);
 
-        $motDePasse = App\Fonctions\GenereMDP(10);
+        $motDePasse = Modele_Entreprise::passgen1(10);
         Modele_Entreprise::Entreprise_Modifier_motDePasse($_REQUEST["idEntreprise"], $motDePasse); //$entreprise["numCompte"]
 
         $mail = new PHPMailer();
