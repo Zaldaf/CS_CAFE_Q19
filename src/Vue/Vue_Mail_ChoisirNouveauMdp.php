@@ -1,12 +1,9 @@
 <?php
 namespace App\Vue;
+use App\Utilitaire\Vue_Composant;
+
 class Vue_Mail_ChoisirNouveauMdp  extends Vue_Composant
 {
-    private string $token;
-    public function __construct(string $token)
-    {
-        $this->token=$token;
-    }
 
     function donneTexte(): string
     {

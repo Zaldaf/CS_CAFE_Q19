@@ -8,8 +8,7 @@ use App\Vue\Vue_Mail_ReinitMdp;
 use App\Vue\Vue_Structure_BasDePage;
 use App\Vue\Vue_Structure_Entete;
 
-use PHPMailer\PHPMailer;
-
+use PHPMailer\PHPMailer\PHPMailer;
 //Ce contrôleur gère le formulaire de connexion pour les visiteurs
 
 $Vue->setEntete(new Vue_Structure_Entete());
@@ -96,6 +95,52 @@ switch ($action) {
         $Vue->addToCorps(new Vue_Mail_ReinitMdp());
 
         break;
+
+    case "reinitmdpconfirmtoken":
+
+        //On regarde si le mail appartient à une entreprise
+        $salarier = Modele_Salarie::Salarie_Select_byMail($_REQUEST["email"]);
+
+        if ($salarier != null) {
+            // le mail appartient à une entreprise
+            // on va faire le mail pour cette entreprise !
+            $octetsAleatoires = openssl_random_pseudo_bytes (256) ;
+            $valeurJeton = sodium_bin2base64($octetsAleatoires, SODIUM_BASE64_VARIANT_ORIGINAL);
+            $jeton = \App\Modele\Modele_Jeton::Jeton_Creation($valeurJeton,$salarier["idSalarie"],1);
+            $mail = new PHPMailer;
+            $mail->isSMTP();
+            $mail->Host = '127.0.0.1';
+            $mail->CharSet = "UTF-8";
+            $mail->Port = 1025; //Port non crypté
+            $mail->SMTPAuth = false; //Pas d’authentification
+            $mail->SMTPAutoTLS = false; //Pas de certificat TLS
+            $mail->setFrom('contact@labruleriecomtoise.fr', 'contact');
+            $mail->addAddress($salarier["mail"], $salarier["nom"] . " " . $salarier["prenom"]);
+            if ($mail->addReplyTo('test@labruleriecomtoise.fr', 'admin')) {
+                $mail->Subject = 'Objet : MDP !';
+                $mail->isHTML(true);
+                $mail->Body =  "<a href=\"http://localhost:8000/index.php?action=token&token=.$valeurJeton.\">Lien à cliquer</a>";
+
+                if (!$mail->send()) {
+                    $msg = 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
+
+
+                } else {
+                    $msg = 'Message envoyé ! Merci de nous avoir contactés.';
+
+
+                }
+            } else {
+                $msg = 'Il doit manquer qqc !';
+
+
+            }
+        }
+        $Vue->addToCorps(new Vue_Mail_Confirme());
+
+
+        break;
+
     case "Se connecter" :
 
         if (isset($_REQUEST["compte"]) and isset($_REQUEST["password"])) {
@@ -178,6 +223,9 @@ switch ($action) {
 
 
         }
+        break;
+    case "token":
+        //Là où une commande par token sera traitée
         break;
     default:
 

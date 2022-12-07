@@ -13,7 +13,7 @@
     "spipu/html2pdf": "^5.2",
     "ext-sodium": "*",
     "ext-openssl": "*",
-    "monolog/monolog": "*",
+    "monolog/monolog": "^3.2",
     "ext-curl": "*",
     "ext-pdo": "*",
     "phpmailer/phpmailer": "^6.6"
