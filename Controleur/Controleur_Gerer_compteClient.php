@@ -14,6 +14,7 @@ use App\Vue\Vue_Structure_Entete;
 $Vue->setEntete(new Vue_Structure_Entete());
 //Vue__MenuEntrepriseClient();
 //Vue_Entreprise_Gerer_Compte();
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "ChangerMDPEntreprise":
         $Vue->setEntete(new Vue_Structure_Entete());

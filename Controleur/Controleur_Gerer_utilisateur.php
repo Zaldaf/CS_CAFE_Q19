@@ -14,7 +14,7 @@ $Vue->setEntete(new Vue_Structure_Entete());
 
 
 $Vue->setMenu(new Vue_Menu_Administration($_SESSION["niveauAutorisation"]));
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     // Niveau d'autorisation 1 : SuperAdmin : peut tout faire.
     // Niveau d'autorisation 2 : Il peut modfier une entreprise et catalogue

@@ -13,7 +13,7 @@ use App\Vue\Vue_Salarie_Liste;
 use App\Vue\Vue_Structure_BasDePage;
 use App\Vue\Vue_Structure_Entete;
 
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "infoEntreprise" :
         $Vue->setEntete(new Vue_Structure_Entete());

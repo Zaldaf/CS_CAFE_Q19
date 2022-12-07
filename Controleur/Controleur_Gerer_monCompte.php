@@ -10,7 +10,7 @@ use App\Vue\Vue_Structure_BasDePage;
 use App\Vue\Vue_Structure_Entete;
 use function App\Fonctions\CalculComplexiteMdp;
 
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "changerMDP":
         //Il a cliqué sur changer Mot de passe. Cas pas fini

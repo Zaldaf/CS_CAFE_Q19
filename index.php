@@ -2,7 +2,7 @@
 session_start();
 include_once "vendor/autoload.php";
 
-use App\Utilitaire\Singleton_Logger;
+
 use App\Utilitaire\Vue;
 use App\Vue\Vue_AfficherMessage;
 use App\Vue\Vue_Connexion_Formulaire_client;
@@ -57,6 +57,8 @@ if (isset($_REQUEST["action"]))
     $action = $_REQUEST["action"];
 else
     $action = "Action_Par_Defaut";
+
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 
 switch ($typeConnexion) {
     case "visiteur" :

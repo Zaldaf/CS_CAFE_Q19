@@ -19,7 +19,7 @@ use function App\Fonctions\GenereMDP;
  */
 $Vue->setEntete(new Vue_Structure_Entete());
 $Vue->setMenu(new Vue_Menu_Administration($_SESSION["niveauAutorisation"]));
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "Modifer":
         //Modifier dans le formulaire de mise à jour

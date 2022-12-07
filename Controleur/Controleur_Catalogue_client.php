@@ -15,7 +15,7 @@ use App\Vue\Vue_Structure_Entete;
 
     $Vue->setEntete(new Vue_Structure_Entete());
 
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("Log $action ");
     if ($action == "AjoutPanierClient") {
         //on met dans le panier avant de calculer le menu
         Modele_Commande::Panier_Ajouter_Produit_ParIdProduit($_SESSION["idEntreprise"], $_REQUEST["idProduit"]);

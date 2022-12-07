@@ -15,7 +15,7 @@ $Vue->setMenu(new Vue_Menu_Administration($_SESSION["niveauAutorisation"]));
 
 $listeEtatCommande = Modele_Commande::EtatCommande_Liste();
 $Vue->addToCorps(new Vue_Commande_Etat($listeEtatCommande));
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "boutonCategorie":
         //On a demandé les commandes d'une catégorie

@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 //Ce contrôleur gère le formulaire de connexion pour les visiteurs
 
 $Vue->setEntete(new Vue_Structure_Entete());
-
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "reinitmdpconfirm":
 

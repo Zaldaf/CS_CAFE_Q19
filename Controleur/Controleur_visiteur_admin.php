@@ -18,13 +18,16 @@ $Vue->setEntete(new Vue_Structure_Entete());
 switch ($action) {
     case "Se connecter" :
 
+
         if (isset($_REQUEST["login"]) and isset($_REQUEST["password"])) {//Si tous les paramètres du formulaire sont bons
 
             //Vérification du mot de passe
             $utilisateur = Modele_Utilisateur::Utilisateur_Select_ParLogin($_REQUEST["login"]);
             // Connexion possible si l'utilisateur existe et qu'il n'est pas désactivé
             if ($utilisateur != null and $utilisateur["desactiver"] == 0) {
+                \App\Utilitaire\Singleton_Logger::getInstance()->debug("Log utilisisateur inconnue $action ");
                 if (password_verify($_REQUEST["password"], $utilisateur["motDePasse"]))
+                    \App\Utilitaire\Singleton_Logger::getInstance()->debug("Mdp incorrecte $action ");
                 {//le mot de passe est associable à ce Hash
 
                     $_SESSION["idUtilisateur"] = $utilisateur["idUtilisateur"];

@@ -20,6 +20,7 @@ $Vue->setEntete(new Vue_Structure_Entete());
 
 
 /* Premier  */
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 switch ($action) {
     case "diminuerQTT" :
         Modele_Commande::Panier_DiminuerQTT_Article($_SESSION["idEntreprise"], $_REQUEST["idProduit"]);
