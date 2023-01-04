@@ -20,7 +20,7 @@ $Vue->setEntete(new Vue_Structure_Entete());
 
 
 /* Premier  */
-\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
+\App\Utilitaire\Singleton_Logger::getInstance()->debug("$action $case");
 switch ($action) {
     case "diminuerQTT" :
         Modele_Commande::Panier_DiminuerQTT_Article($_SESSION["idEntreprise"], $_REQUEST["idProduit"]);
@@ -31,6 +31,7 @@ switch ($action) {
         Modele_Commande::Panier_AugmenterQTT_Article($_SESSION["idEntreprise"], $_REQUEST["idProduit"]);
         $listeArticlePanier = Modele_Commande::Panier_ListeArticle($_SESSION["idEntreprise"]);
         $Vue->addToCorps(new Vue_Panier_Client($listeArticlePanier));
+        \App\Modele\Modele_Log::Realiser_ajouter($_SESSION["idSalarie"],1,$_REQUEST["idProduit"]);
         break;
     case "validerPanier":
         ob_start();

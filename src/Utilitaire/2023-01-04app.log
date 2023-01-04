@@ -1,0 +1,44 @@
+[2023-01-04T17:09:14.218673+01:00] cafe.DEBUG: test log Action_Par_Defaut Cas_Par_Defaut [] {"IP":"::1"}
+[2023-01-04T17:09:19.399586+01:00] cafe.DEBUG: test log Se connecter Cas_Par_Defaut [] {"IP":"::1"}
+[2023-01-04T17:09:19.699867+01:00] cafe.DEBUG: Log Se connecter  [] {"IP":"::1"}
+[2023-01-04T17:09:22.933347+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:09:24.415135+01:00] cafe.DEBUG: test log VoirDetailCommande Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:09:51.829379+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:09:53.493690+01:00] cafe.DEBUG: test log VoirDetailCommande Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:09:54.589990+01:00] cafe.DEBUG: test log AfficherCommandePDF Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:10:04.503191+01:00] cafe.DEBUG: test log VoirDetailCommande Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:10:56.896641+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2023-01-04T17:10:57.855346+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:11:01.463189+01:00] cafe.DEBUG: test log VoirDetailCommande Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:11:29.915932+01:00] cafe.DEBUG: Log Action_Par_Defaut  [] {"IP":"::1"}
+[2023-01-04T17:11:30.990530+01:00] cafe.DEBUG: Log AjoutPanierClient  [] {"IP":"::1"}
+[2023-01-04T17:11:32.389255+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:11:33.038839+01:00] cafe.DEBUG: validerPanier Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:11:37.943927+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:11:39.079170+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:12:25.047894+01:00] cafe.DEBUG: test log VoirDetailCommande Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:12:26.135611+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:12:26.727873+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2023-01-04T17:13:11.111856+01:00] cafe.DEBUG: Log Action_Par_Defaut  [] {"IP":"::1"}
+[2023-01-04T17:13:12.559713+01:00] cafe.DEBUG: Log AjoutPanierClient  [] {"IP":"::1"}
+[2023-01-04T17:13:13.646868+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:13:14.462166+01:00] cafe.DEBUG: validerPanier Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:28:38.876731+01:00] cafe.DEBUG: validerPanier Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:28:44.116721+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:28:56.604296+01:00] cafe.DEBUG: test log Se connecter Cas_Par_Defaut [] {"IP":"::1"}
+[2023-01-04T17:28:56.701578+01:00] cafe.DEBUG: Log Se connecter  [] {"IP":"::1"}
+[2023-01-04T17:28:59.418650+01:00] cafe.DEBUG: Log AjoutPanierClient  [] {"IP":"::1"}
+[2023-01-04T17:29:00.946999+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:29:01.994114+01:00] cafe.DEBUG: validerPanier Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:32:03.772598+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:32:05.198940+01:00] cafe.DEBUG: Log Action_Par_Defaut  [] {"IP":"::1"}
+[2023-01-04T17:32:06.181586+01:00] cafe.DEBUG: Log AjoutPanierClient  [] {"IP":"::1"}
+[2023-01-04T17:32:07.008757+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:32:07.758885+01:00] cafe.DEBUG: augmenterQTT Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:36:13.660907+01:00] cafe.DEBUG: augmenterQTT Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:37:30.245398+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:37:31.322985+01:00] cafe.DEBUG: augmenterQTT Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:39:25.166395+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:39:26.293328+01:00] cafe.DEBUG: augmenterQTT Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:44:05.308484+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2023-01-04T17:44:06.367358+01:00] cafe.DEBUG: augmenterQTT Gerer_Panier [] {"IP":"::1"}

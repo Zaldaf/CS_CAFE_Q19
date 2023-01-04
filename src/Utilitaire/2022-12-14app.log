@@ -1,0 +1,25 @@
+[2022-12-14T17:07:02.068444+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2022-12-14T17:08:52.719766+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:21.011047+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:21.704099+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2022-12-14T17:09:22.724515+01:00] cafe.DEBUG: Log Action_Par_Defaut  [] {"IP":"::1"}
+[2022-12-14T17:09:23.704547+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2022-12-14T17:09:44.625580+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:45.255917+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2022-12-14T17:09:46.232039+01:00] cafe.DEBUG: Log Action_Par_Defaut  [] {"IP":"::1"}
+[2022-12-14T17:09:47.769231+01:00] cafe.DEBUG: Log AjoutPanierClient  [] {"IP":"::1"}
+[2022-12-14T17:09:49.400778+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:50.096677+01:00] cafe.DEBUG: diminuerQTT Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:51.278937+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:51.799934+01:00] cafe.DEBUG: Log AjoutPanierClient  [] {"IP":"::1"}
+[2022-12-14T17:09:53.577286+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:54.408093+01:00] cafe.DEBUG: validerPanier Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:58.722798+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:09:59.737753+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}
+[2022-12-14T17:10:05.730758+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2022-12-14T17:10:07.122609+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:10:09.340266+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2022-12-14T17:10:09.753170+01:00] cafe.DEBUG: Log Action_Par_Defaut  [] {"IP":"::1"}
+[2022-12-14T17:10:10.200700+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_MonCompte_Salarie [] {"IP":"::1"}
+[2022-12-14T17:10:10.561344+01:00] cafe.DEBUG: Action_Par_Defaut Gerer_Panier [] {"IP":"::1"}
+[2022-12-14T17:10:10.929328+01:00] cafe.DEBUG: test log Action_Par_Defaut Gerer_CommandeClient [] {"IP":"::1"}

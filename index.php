@@ -58,7 +58,6 @@ if (isset($_REQUEST["action"]))
 else
     $action = "Action_Par_Defaut";
 
-\App\Utilitaire\Singleton_Logger::getInstance()->debug("test log $action $case");
 
 switch ($typeConnexion) {
     case "visiteur" :
