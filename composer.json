@@ -10,13 +10,13 @@
     }
   ],
   "require": {
-    "spipu/html2pdf": "^5.2",
+    "spipu/html2pdf": "*",
     "ext-sodium": "*",
     "ext-openssl": "*",
-    "monolog/monolog": "^3.2",
+    "monolog/monolog": "*",
     "ext-curl": "*",
     "ext-pdo": "*",
-    "phpmailer/phpmailer": "^6.6"
+    "phpmailer/phpmailer": "*"
   },
   "autoload": {
     "files": [

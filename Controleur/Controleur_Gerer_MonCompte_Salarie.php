@@ -54,6 +54,14 @@ switch ($action) {
         $Vue->setEntete(new Vue_Structure_Entete());
         $Vue->addToCorps(new Vue_Connexion_Formulaire_client());
         break;
+    case "RGPD":
+
+        Modele_Salarie::Salarie_SupprimeRGPD($_SESSION["idSalarie"]);
+        session_destroy();
+        unset($_SESSION);
+        $Vue->setEntete(new Vue_Structure_Entete());
+        $Vue->addToCorps(new Vue_Connexion_Formulaire_client());
+        break;
     default :
         //Cas par défaut: affichage du menu des actions.
         $Vue->setEntete(new Vue_Structure_Entete());
